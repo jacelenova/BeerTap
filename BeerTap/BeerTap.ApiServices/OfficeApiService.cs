@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -52,7 +53,8 @@ namespace BeerTap.ApiServices
 
         public Task<IEnumerable<Model.Office>> GetManyAsync(IRequestContext context, CancellationToken cancellation)
         {
-            var offices = _officeService.GetAll().AsEnumerable();
+            //var offices = _officeService.GetAll().AsEnumerable();
+            var offices = _officeService.GetAll().Include(k => k.Kegs).AsEnumerable();
 
             return Task.FromResult(offices.AsEnumerable().Select(o => _toResourceMapper.Map(o)));
         }

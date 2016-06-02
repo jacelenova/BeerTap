@@ -51,6 +51,9 @@ namespace BeerTap.ApiServices
 
             var replaceKeg = _kegService.ReplaceKeg(resource.OfficeId, resource.Id);
 
+            resource.Id = kegId;
+            resource.OfficeId = officeId;
+
             return Task.FromResult(resource);
             //throw new NotImplementedException();
         }

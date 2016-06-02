@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using BeerTap.Model;
+using IQ.Platform.Framework.WebApi.CacheControl;
 using IQ.Platform.Framework.WebApi.Hypermedia;
 using IQ.Platform.Framework.WebApi.Hypermedia.Specs;
 using IQ.Platform.Framework.WebApi.Model.Hypermedia;
@@ -29,6 +30,16 @@ namespace BeerTap.WebApi.Hypermedia
                         }
                     };
             }
+        }
+
+        protected override IEnumerable<ResourceLinkTemplate<ReplaceKeg>> Links()
+        {
+            yield return CreateLinkTemplate(CommonLinkRelations.Self, UriReplaceBeer, c => c.OfficeId, c => c.Id);
+        }
+
+        public override ResourceCacheControlSpec Cache
+        {
+            get { return ResourceCacheControl.WithCache(0); }
         }
     }
 }
