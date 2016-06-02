@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BeerTap.Domain.Repository
 {
@@ -10,14 +7,10 @@ namespace BeerTap.Domain.Repository
     {
         public Office GetById(int id)
         {
-            var query = GetAll().SingleOrDefault(t => t.Id == id);
+            //var query = GetAll().SingleOrDefault(t => t.Id == id);
+            var query = GetAll().Include(k => k.Kegs).SingleOrDefault(o => o.Id == id);
 
             return query;
         }
-
-        //internal object GetAll<T>()
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BeerTap.Domain;
+﻿using System.Linq;
 using BeerTap.Model;
 using IQ.Foundation;
 using IQ.Platform.Framework.Common.Mapping;
@@ -31,16 +26,17 @@ namespace BeerTap.ApiServices
             return null;
         }
 
-        static Model.Keg MapKegs(Domain.Keg source)
+        public Model.Keg MapKegs(Domain.Keg source)
         {
             var resource = new Model.Keg()
             {
                 Id = source.Id,
                 Content = source.Content,
-                KegState = KegState.GoinDown,
+                //KegState = KegState.GoinDown,
                 Name = source.Name,
                 OfficeId = source.OfficeId
             };
+            resource.KegState = GetKegState(resource);
 
             return resource;
         }
@@ -58,7 +54,7 @@ namespace BeerTap.ApiServices
             return resource;
         }
 
-        static Domain.Keg MapKegs(Model.Keg source)
+        public Domain.Keg MapKegs(Model.Keg source)
         {
             var resource = new Domain.Keg(source.Name)
             {
@@ -69,6 +65,14 @@ namespace BeerTap.ApiServices
             };
 
             return resource;
+        }
+
+        private KegState GetKegState(Model.Keg source)
+        {
+            if (Model.Keg.MaxContent == source.Content) return KegState.New;
+            if ((double)source.Content / Model.Keg.MaxContent >= 0.25) return KegState.GoinDown;
+            if ((double)source.Content / Model.Keg.MaxContent > 0) return KegState.AlmostEmpty;
+            return KegState.SheIsDryMate;
         }
     }
 }

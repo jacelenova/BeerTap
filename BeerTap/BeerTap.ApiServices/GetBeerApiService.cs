@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using BeerTap.ApiServices.Security;
@@ -10,8 +7,6 @@ using BeerTap.Model;
 using IQ.Platform.Framework.WebApi;
 using IQ.Platform.Framework.WebApi.Services.Security;
 using IQ.Platform.Framework.Common;
-using System.Web;
-using System.Net;
 
 namespace BeerTap.ApiServices
 {

@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using BeerTap.ApiServices.Security;
-using BeerTap.Domain;
-using BeerTap.Domain.Service;
 using IQ.Platform.Framework.Common.Mapping;
 using IQ.Platform.Framework.WebApi;
 using IQ.Platform.Framework.WebApi.Services.Security;
