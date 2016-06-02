@@ -1,0 +1,11 @@
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\BeerTap.Model.XML
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\BeerTap.Model.dll
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\BeerTap.Model.pdb
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\IQ.Platform.Framework.Common.dll
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\IQ.Platform.Framework.WebApi.Model.dll
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\Newtonsoft.Json.dll
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\IQ.Platform.Framework.WebApi.Model.xml
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\Newtonsoft.Json.xml
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.dll
+c:\users\jacel.enova\documents\visual studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.pdb
+C:\Users\Jacel.Enova\Documents\Visual Studio 2015\Projects\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.csprojResolveAssemblyReference.cache

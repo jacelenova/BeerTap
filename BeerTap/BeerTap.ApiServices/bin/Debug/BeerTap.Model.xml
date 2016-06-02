@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BeerTap.Model</name>
+    </assembly>
+    <members>
+        <member name="T:BeerTap.Model.GetBeer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.GetBeer.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.GetBeer.OfficeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.GetBeer.Size">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.IStatefulKeg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.IStatefulKeg.KegState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.Keg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BeerTap.Model.Keg.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BeerTap.Model.Keg.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:BeerTap.Model.Keg.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.Keg.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.Keg.Content">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.Keg.OfficeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.Keg.KegState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.Keg.MaxContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.KegState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.KegState.New">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.KegState.GoinDown">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.KegState.AlmostEmpty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.KegState.SheIsDryMate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.LinkRelations">
+            <summary>
+            iQmetrix link relation names
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.LinkRelations.SampleResource">
+            <summary>
+            link relation to describe the Identity resource.
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.LinkRelations.Office">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.LinkRelations.Keg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.LinkRelations.GetBeer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.LinkRelations.ReplaceKeg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.LinkRelations.Offices">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BeerTap.Model.LinkRelations.Offices.AddKeg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.Office">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BeerTap.Model.Office.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BeerTap.Model.Office.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:BeerTap.Model.Office.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.Office.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.Office.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.Office.Kegs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.ReplaceKeg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.ReplaceKeg.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.ReplaceKeg.OfficeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BeerTap.Model.SampleResource">
+            <summary>
+            A Sample Resource, used as a placeholder. To be removed after real-world API resources have been added.
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.SampleResource.Id">
+            <summary>
+            Unique Identifier for the SampleResource
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.SampleResource.Name">
+            <summary>
+            Name for the SampleResource
+            </summary>
+        </member>
+        <member name="P:BeerTap.Model.SampleResource.Description">
+            <summary>
+            Description for the SampleResource
+            </summary>
+        </member>
+    </members>
+</doc>
