@@ -8,3 +8,13 @@ C:\Users\Jacel.Enova\Documents\Visual Studio 2015\Projects\BeerTap\BeerTap.Domai
 C:\Users\Jacel.Enova\Documents\Visual Studio 2015\Projects\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.dll
 C:\Users\Jacel.Enova\Documents\Visual Studio 2015\Projects\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.pdb
 C:\Users\Jacel.Enova\Documents\Visual Studio 2015\Projects\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\BeerTap.Domain.dll.config
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\BeerTap.Domain.dll
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\BeerTap.Domain.pdb
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.dll
+C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.pdb

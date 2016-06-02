@@ -42,6 +42,7 @@ namespace BeerTap.ApiServices
             var getBeer = _kegService.GetBeer(kegId, officeId, resource.Size);
             if (getBeer == -1) context.ThrowNotFoundHttpResponseException<GetBeer, int>(resource.Id);
 
+            resource.OfficeId = officeId;
             resource.Size = getBeer;
 
             return Task.FromResult(resource);

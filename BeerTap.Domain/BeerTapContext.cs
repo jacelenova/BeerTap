@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace BeerTap.Domain
 {
@@ -8,8 +9,8 @@ namespace BeerTap.Domain
         {
             //Database.SetInitializer<BeerTapContext>(new CreateDatabaseIfNotExists<BeerTapContext>());
             Database.SetInitializer<BeerTapContext>(new BeerTapInitializer());
-            Database.Connection.ConnectionString =
-                "Server=MAN29-W541-W8\\SQL2012;Database=BeerTap;User Id=sa;Password=iQmetrix!;";
+            //Database.Connection.ConnectionString =
+            //    "Server=MAN29-W541-W8\\SQL2012;Database=BeerTap;User Id=sa;Password=iQmetrix!;";
         }
 
         public DbSet<Keg> Kegs { get; set; }
@@ -20,10 +21,39 @@ namespace BeerTap.Domain
     {
         protected override void Seed(BeerTapContext context)
         {
-            context.Offices.Add(new Office("Vancouver"));
-            context.Offices.Add(new Office("Regina"));
-            context.Offices.Add(new Office("Winnepeg"));
-            context.Offices.Add(new Office("Davidson"));
+            context.Offices.Add(new Office("Vancouver")
+            {
+                Kegs = new List<Keg>()
+                {
+                    new Keg("Red Horse"),
+                    new Keg("San Mig Light")
+                }
+            });
+            context.Offices.Add(new Office("Regina")
+            {
+                Kegs = new List<Keg>()
+                {
+                    new Keg("Red Horse"),
+                    new Keg("Smirnoff Mule")
+                }
+            });
+            context.Offices.Add(new Office("Winnepeg")
+            {
+                Kegs = new List<Keg>()
+                {
+                    new Keg("Red Horse"),
+                    new Keg("Colt 45")
+                }
+            });
+            context.Offices.Add(new Office("Davidson")
+            {
+                Kegs = new List<Keg>()
+                {
+                    new Keg("Red Horse"),
+                    new Keg("San Mig Light"),
+                    new Keg("San Mig Apple")
+                }
+            });
 
             //context.Kegs.Add(new Keg() { Name = "Red Horse", OfficeId = 1 });
             //context.Kegs.Add(new Keg() { Name = "San Mig Light", OfficeId = 1 });
