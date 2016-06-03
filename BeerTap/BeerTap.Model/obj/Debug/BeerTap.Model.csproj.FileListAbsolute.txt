@@ -20,3 +20,13 @@ C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap\BeerTap.Model\bin\Debug\Newto
 C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.csprojResolveAssemblyReference.cache
 C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.dll
 C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.pdb
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\BeerTap.Model.XML
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\BeerTap.Model.dll
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\BeerTap.Model.pdb
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\IQ.Platform.Framework.Common.dll
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\IQ.Platform.Framework.WebApi.Model.dll
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\IQ.Platform.Framework.WebApi.Model.xml
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.dll
+C:\Dev\Misc\JacelEnova\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.pdb

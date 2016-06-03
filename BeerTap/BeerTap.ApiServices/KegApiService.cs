@@ -20,16 +20,19 @@ namespace BeerTap.ApiServices
         private readonly IMapper<Domain.Keg, Model.Keg> _toResourceMapper;
         private readonly IMapper<Model.Keg, Domain.Keg> _toTransportMapper;
         private readonly Domain.Service.IKegService _kegService;
+        private readonly IExtractDataFromARequestContext _requestContextExtractor;
 
         public KegApiService(
             IApiUserProvider<BeerTapApiUser> userProvider,
             IMapper<Domain.Keg, Model.Keg> toResourceMapper,
             IMapper<Model.Keg, Domain.Keg> toTransportMapper,
-            Domain.Service.IKegService kegService
+            Domain.Service.IKegService kegService,
+            IExtractDataFromARequestContext requestContextExtractor
             )
         {
             if (kegService == null)
                 throw new ArgumentNullException("kegService");
+            if (requestContextExtractor == null) throw new ArgumentNullException(nameof(requestContextExtractor));
             if (toResourceMapper == null)
                 throw new ArgumentNullException("toResourceMapper");
             if (toTransportMapper == null)
@@ -38,6 +41,7 @@ namespace BeerTap.ApiServices
                 throw new ArgumentNullException("userProvider");
 
             _kegService = kegService;
+            _requestContextExtractor = requestContextExtractor;
             _toResourceMapper = toResourceMapper;
             _toTransportMapper = toTransportMapper;
             _userProvider = userProvider;
@@ -53,6 +57,8 @@ namespace BeerTap.ApiServices
 
         public Task<IEnumerable<Keg>> GetManyAsync(IRequestContext context, CancellationToken cancellation)
         {
+            _requestContextExtractor.ExtractOfficeId<Keg>(context);
+
             //var kegs = _kegService.GetAll().AsEnumerable();
             var officeId = GetOfficeId(context);
             var kegs = _kegService.GetKegsByOffice(officeId);

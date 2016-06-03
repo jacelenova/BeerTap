@@ -18,3 +18,13 @@ C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\bin\Debug\EntityFramew
 C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.dll
 C:\Users\Jacel.Enova\Documents\Git\BeerTap\BeerTap.Domain\obj\Debug\BeerTap.Domain.pdb
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\bin\Debug\BeerTap.Domain.dll.config
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\bin\Debug\BeerTap.Domain.dll
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\bin\Debug\BeerTap.Domain.pdb
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\bin\Debug\EntityFramework.dll
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\bin\Debug\EntityFramework.xml
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\obj\Debug\BeerTap.Domain.csprojResolveAssemblyReference.cache
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\obj\Debug\BeerTap.Domain.dll
+C:\Dev\Misc\JacelEnova\BeerTap.Domain\obj\Debug\BeerTap.Domain.pdb

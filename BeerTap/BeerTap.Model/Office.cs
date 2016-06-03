@@ -26,7 +26,7 @@ namespace BeerTap.Model
         public Office(string name)
         {
             this.Name = name;
-            this.Kegs = new List<Keg>();
+            //this.Kegs = new List<Keg>();
         }
         /// <summary>
         /// 
@@ -46,7 +46,7 @@ namespace BeerTap.Model
         /// <summary>
         /// 
         /// </summary>
-        public IList<Keg> Kegs { get; set; }
+        //public IList<Keg> Kegs { get; set; }
 
     }
 }

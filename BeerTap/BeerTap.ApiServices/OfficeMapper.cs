@@ -19,7 +19,7 @@ namespace BeerTap.ApiServices
                 {
                     Id = source.Id,
                 };
-                resource.Kegs.AddRange(source.Kegs.Select(MapKegs));
+                //resource.Kegs.AddRange(source.Kegs.Select(MapKegs));
                 return resource;
             }
 
@@ -49,7 +49,7 @@ namespace BeerTap.ApiServices
                 Id = source.Id,
                 Name = source.Name
             };
-            resource.Kegs.AddRange(source.Kegs.Select(MapKegs));
+            //resource.Kegs.AddRange(source.Kegs.Select(MapKegs));
 
             return resource;
         }

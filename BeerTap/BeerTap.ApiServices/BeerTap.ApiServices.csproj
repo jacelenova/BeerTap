@@ -185,6 +185,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RequestContextExtractor.cs" />
     <Compile Include="GetBeerApiService.cs" />
     <Compile Include="IDomainServiceResolver.cs" />
     <Compile Include="IGetBeerApiService.cs" />

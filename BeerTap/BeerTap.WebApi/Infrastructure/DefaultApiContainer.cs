@@ -62,6 +62,7 @@ namespace BeerTap.WebApi.Infrastructure
 							 //TODO: It requires the "IQ.Auth.OAuth2.ProtectedResource.ZeroMQ.ZeroMQServerAddress" app setting. The AlwaysAuthenticateRequestAuthenticator has to be commented out as well
 							 new OAuthProtectedResourceComponentsInstaller(),
                              new SecurityMessageHandlersInstaller(Assembly.GetExecutingAssembly()),
+                             new ApiDependenciesInstaller(), 
                          })
                          .InstallLogging();
 
