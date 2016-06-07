@@ -49,7 +49,7 @@ namespace BeerTap.ApiServices
 
         public Task<Keg> GetAsync(int id, IRequestContext context, CancellationToken cancellation)
         {
-            var officeId = GetOfficeId(context);
+            var officeId = _requestContextExtractor.ExtractOfficeId<Keg>(context);
             var keg = _kegService.GetKeg(id, officeId);
 
             return Task.FromResult(_toResourceMapper.Map(keg));
@@ -57,10 +57,7 @@ namespace BeerTap.ApiServices
 
         public Task<IEnumerable<Keg>> GetManyAsync(IRequestContext context, CancellationToken cancellation)
         {
-            _requestContextExtractor.ExtractOfficeId<Keg>(context);
-
-            //var kegs = _kegService.GetAll().AsEnumerable();
-            var officeId = GetOfficeId(context);
+            var officeId = _requestContextExtractor.ExtractOfficeId<Keg>(context);
             var kegs = _kegService.GetKegsByOffice(officeId);
 
             return Task.FromResult(kegs.AsEnumerable().Select(k => _toResourceMapper.Map(k)));
@@ -68,7 +65,7 @@ namespace BeerTap.ApiServices
 
         public Task<ResourceCreationResult<Keg, int>> CreateAsync(Keg resource, IRequestContext context, CancellationToken cancellation)
         {
-            var officeId = GetOfficeId(context);
+            var officeId = _requestContextExtractor.ExtractOfficeId<Keg>(context);
             var keg = _kegService.Add(resource.Name, officeId);
 
             return Task.FromResult(new ResourceCreationResult<Keg, int>(_toResourceMapper.Map(keg)));

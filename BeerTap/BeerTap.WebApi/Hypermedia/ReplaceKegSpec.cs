@@ -21,6 +21,10 @@ namespace BeerTap.WebApi.Hypermedia
                 return
                     new SingleStateSpec<ReplaceKeg, int>()
                     {
+                        Links =
+                        {
+                            CreateLinkTemplate(LinkRelations.Keg, KegSpec.UriKegAtOffice, resource => resource.OfficeId, resource => resource.Id)
+                        },
                         Operations =
                         {
                             Get = ServiceOperations.Get,

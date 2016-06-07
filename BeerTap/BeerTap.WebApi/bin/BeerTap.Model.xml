@@ -191,25 +191,5 @@
             
             </summary>
         </member>
-        <member name="T:BeerTap.Model.SampleResource">
-            <summary>
-            A Sample Resource, used as a placeholder. To be removed after real-world API resources have been added.
-            </summary>
-        </member>
-        <member name="P:BeerTap.Model.SampleResource.Id">
-            <summary>
-            Unique Identifier for the SampleResource
-            </summary>
-        </member>
-        <member name="P:BeerTap.Model.SampleResource.Name">
-            <summary>
-            Name for the SampleResource
-            </summary>
-        </member>
-        <member name="P:BeerTap.Model.SampleResource.Description">
-            <summary>
-            Description for the SampleResource
-            </summary>
-        </member>
     </members>
 </doc>

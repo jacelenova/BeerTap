@@ -192,7 +192,6 @@
     <Compile Include="IKegApiService.cs" />
     <Compile Include="IOfficeApiService.cs" />
     <Compile Include="IReplaceKegApiService.cs" />
-    <Compile Include="ISampleApiService.cs" />
     <Compile Include="KegApiService.cs" />
     <Compile Include="KegLinkParameter.cs" />
     <Compile Include="KegMapper.cs" />
@@ -205,7 +204,6 @@
     <Compile Include="Security\ApiClient.cs" />
     <Compile Include="Security\AuthenticationFailedException.cs" />
     <Compile Include="Security\BeerTapApiUser.cs" />
-    <Compile Include="SampleApiService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BeerTap.Domain\BeerTap.Domain.csproj">
